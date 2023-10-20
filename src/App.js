@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./Weather";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-          <Weather />
         </p>
         <a
           className="App-link"
