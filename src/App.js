@@ -3,7 +3,7 @@ import "./App.css";
 import React from "react";
 import axios from "axios";
 
-export default function Weather() {
+function Weather() {
   let weatherData = {
     city: "Durban",
     temperature: 21,
@@ -63,3 +63,5 @@ export default function Weather() {
     </div>
   );
 }
+
+export default App;
