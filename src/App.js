@@ -80,8 +80,11 @@ function App() {
       <div className="weather-forecast" id="weather-forecast">
         <div className="row">
           <div className="col-3">
-            <div className="weather-forecast-date">Thur</div>
+            <div className="weather-forecast-date">Tuesday</div>
             <div className="weather-icon">
+              <h4>Tomorrow's Forecast</h4>
+              <br />
+
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="weather"
