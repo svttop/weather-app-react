@@ -42,25 +42,10 @@ h1 {
 }
 
 .weather-forecast {
-  position: absolute;
-  top: 500px;
-  left: 400px;
   text-align: center;
   font-size: 25px;
   color: #d0d0d7;
   margin-top: 20px;
-}
-
-.city {
-  position: absolute;
-  left: 250px;
-  top: 250px;
-}
-
-.time {
-  position: absolute;
-  left: 250px;
-  top: 295px;
 }
 
 .search-bar .search-input {
