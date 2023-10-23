@@ -38,16 +38,16 @@ function App() {
         <div id="city" className="city">
           New Zealand
         </div>
+        <div className="time" id="time">
+          Monday, 1:45pm
+        </div>
       </h2>
-      <div className="time" id="time">
-        Monday, 1:45pm
-      </div>
 
       <div className="icon">
         <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
-          width="200"
-          height="200"
+          src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+          width="100"
+          height="100"
           alt="clear"
           id="icon"
         />
@@ -83,16 +83,16 @@ function App() {
             <div className="weather-forecast-date">Thur</div>
             <div className="weather-icon">
               <img
-                src="http://openweathermap.org/img/wn/50d@2x.png"
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="weather"
-                width="200"
+                width="100"
                 height="100"
               />
             </div>
 
             <div className="weather-forecast-temperatures">
-              <span className="weather-forecast-temperature-max">18°</span>/
-              <span className="weather-forecast-temperatue-min">12° </span>
+              <span className="weather-forecast-temperature-max">21°</span>/
+              <span className="weather-forecast-temperatue-min">7° </span>
             </div>
           </div>
         </div>
