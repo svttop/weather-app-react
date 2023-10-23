@@ -28,7 +28,6 @@ function App() {
       </div>
       <br />
       <br />
-      <br />
       <h1>
         😀👋🏻
         <br />
@@ -53,17 +52,17 @@ function App() {
         />
         <div className="temp" id="temp">
           21
+          <span id="celsius" className="celsius">
+            <strong id="temperature"></strong>
+            <a href="/#" id="celsius-link">
+              °C
+            </a>
+            |
+            <a href="/#" id="fahrenheit-link">
+              °F
+            </a>
+          </span>
         </div>
-        <span id="celsius" className="celsius">
-          <strong id="temperature"></strong>
-          <a href="/#" id="celsius-link">
-            °C
-          </a>
-          |
-          <a href="/#" id="fahrenheit-link">
-            °F
-          </a>
-        </span>
       </div>
 
       <div className="weather-info">
@@ -80,11 +79,10 @@ function App() {
       <div className="weather-forecast" id="weather-forecast">
         <div className="row">
           <div className="col-3">
+            <h4>Tomorrow's Forecast</h4>
+            <br />
             <div className="weather-forecast-date">Tuesday</div>
             <div className="weather-icon">
-              <h4>Tomorrow's Forecast</h4>
-              <br />
-
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="weather"
