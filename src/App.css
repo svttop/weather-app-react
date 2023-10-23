@@ -150,11 +150,6 @@ body {
 }
 
 .container {
-  background-color: linear-gradient(
-    111.5deg,
-    rgb(228, 247, 255) 21.9%,
-    rgb(255, 216, 194) 92.2%
-  );
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 550px;
