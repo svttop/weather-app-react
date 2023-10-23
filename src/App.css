@@ -54,6 +54,7 @@ li {
 }
 
 .search-bar .search-input {
+  position: absolute;
   text-align: center;
   height: 30px;
   width: 200px;
