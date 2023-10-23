@@ -26,6 +26,9 @@ function App() {
           </div>
         </form>
       </div>
+      <br />
+      <br />
+      <br />
       <h1>
         😀👋🏻
         <br />
@@ -96,7 +99,7 @@ function App() {
 
       <footer>
         This project was coded by{" "}
-        <a href="https://github.com/lydi-in-tech">Lydia Pelesane</a> and is{" "}
+        <a href="https://github.com/lydi-in-tech">Tiffany</a> and is{" "}
         <a
           href="https://github.com/lydi-in-tech/react-week4-homework"
           target="_blank"
