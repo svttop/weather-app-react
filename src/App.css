@@ -13,13 +13,6 @@ h1 {
   font-size: 55px;
 }
 
-.temp {
-  font-size: 50px;
-  position: absolute;
-  left: 200px;
-  top: 22px;
-}
-
 .celsius {
   font-size: 20px;
   position: absolute;
