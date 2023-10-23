@@ -20,10 +20,10 @@ function App() {
                   id="city-input"
                 />
               </div>
-              <div className="col-3">
+              <div className="col-3 submitbutton">
                 <input
                   type="submit"
-                  className="btn btn-primary w-200"
+                  className="btn btn-primary"
                   value="Search"
                 />
               </div>
