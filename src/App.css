@@ -39,9 +39,6 @@ h1 {
 
 .weather-info {
   font-size: 18px;
-  position: absolute;
-  left: 900px;
-  top: 185px;
 }
 
 .weather-forecast {
