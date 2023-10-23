@@ -11,8 +11,6 @@ function App() {
                 <input
                   type="search"
                   placeholder="Search for a city"
-                  autoFocus="on"
-                  autoComplete="off"
                   className="form-control search-input"
                   id="city-input"
                 />
@@ -28,8 +26,11 @@ function App() {
           </div>
         </form>
       </div>
-
-      <div className="icon">
+      <h1>
+        😀👋🏻
+        <br />
+      </h1>
+      <div className="weather-icon">
         <img
           src="http://openweathermap.org/img/wn/50d@2x.png"
           width="200"
@@ -53,20 +54,24 @@ function App() {
       </div>
       <h1>
         <div id="city" className="city">
-          New York
+          New Zealand
         </div>
       </h1>
       <div className="time" id="time">
-        15:00 Friday
+        Monday, 1:45pm
       </div>
 
       <div className="info">
         <div className="description" id="description">
-          rainy
+          Weather Condition
         </div>
-        <div className="humidity" id="humidity"></div>
-        <div className="windSpeed" id="windSpeed"></div>
+
+        <ul>
+          <li>Humidity: %</li>
+          <li>Wind: km/h</li>
+        </ul>
       </div>
+
       <div className="weather-forecast" id="weather-forecast">
         <div className="row">
           <div className="col-3">
@@ -115,3 +120,50 @@ function App() {
 }
 
 export default App;
+
+<div className="Weather">
+  <form className="search">
+    <div className="row">
+      <div className="col-9">
+        <input
+          type="search"
+          placeholder="Enter country here"
+          className="form-control"
+        />
+      </div>
+      <div className="col-3">
+        <input type="submit" value="Search" />
+      </div>
+    </div>
+  </form>
+  <div className="overview">
+    <h1>
+      😀👋🏻
+      <br />
+      {weatherData.city}
+    </h1>
+    <ul>
+      <li>Last updated: {weatherData.date}</li>
+      <li>{weatherData.description}</li>
+    </ul>
+  </div>
+  <div className="row">
+    <div className="col-6">
+      <div className="weather-temperature">
+        <img src={weatherData.imgUrl} alt={weatherData.description} />
+        <div>
+          <strong>{weatherData.temperature}</strong>
+          <span className="units">
+            <a href="/">°C</a> | <a href="/">°F</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div className="col-6">
+      <ul>
+        <li>Humidity: {weatherData.humidity}%</li>
+        <li>Wind: {weatherData.wind} km/h</li>
+      </ul>
+    </div>
+  </div>
+</div>;

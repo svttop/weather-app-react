@@ -1,10 +1,10 @@
-.icon {
+.weather-icon {
   position: absolute;
   left: 200px;
   top: 110px;
 }
 
-.icon img {
+.weather-icon img {
   position: absolute;
   top: -20px;
 }
@@ -140,7 +140,6 @@ body {
 }
 
 .container {
-  border: 1px solid lightblue;
   background-color: linear-gradient(
     111.5deg,
     rgb(228, 247, 255) 21.9%,
@@ -150,5 +149,4 @@ body {
   margin-bottom: 20px;
   padding-bottom: 550px;
   border-radius: 10px;
-  box-shadow: 0 0 5px 1px lightgrey;
 }
