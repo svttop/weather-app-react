@@ -30,7 +30,7 @@ function App() {
         😀👋🏻
         <br />
       </h1>
-      <div className="weather-icon">
+      <div className="icon">
         <img
           src="http://openweathermap.org/img/wn/50d@2x.png"
           width="200"

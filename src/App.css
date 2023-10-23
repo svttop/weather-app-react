@@ -1,10 +1,20 @@
-.weather-icon {
+.App {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
+  );
+}
+
+.icon {
   position: absolute;
   left: 200px;
   top: 110px;
 }
 
-.weather-icon img {
+.icon img {
   position: absolute;
   top: -20px;
 }
@@ -23,7 +33,7 @@
   top: 35px;
 }
 
-.info {
+.weather-info {
   font-size: 18px;
   position: absolute;
   left: 900px;
