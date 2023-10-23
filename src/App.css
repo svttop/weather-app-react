@@ -32,6 +32,11 @@ h2 {
 .weather-info {
   font-size: 18px;
   text-align: center;
+  list-style: none;
+}
+
+.description {
+  font-weight: bold;
 }
 
 .weather-forecast {
