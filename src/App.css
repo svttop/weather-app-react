@@ -32,6 +32,9 @@ h2 {
 .weather-info {
   font-size: 18px;
   text-align: center;
+}
+
+.ul {
   list-style: none;
 }
 
