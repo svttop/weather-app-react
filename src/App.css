@@ -95,11 +95,6 @@ li {
   padding: 20px 20px;
 }
 
-.col-9 {
-  flex: 0 0 auto;
-  width: 75%;
-}
-
 .weather-forecast-date {
   font-size: 18px;
   opacity: 0.5;

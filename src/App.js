@@ -101,10 +101,9 @@ function App() {
       <script src="src/app.js"></script>
 
       <footer>
-        This project was coded by{" "}
-        <a href="https://github.com/lydi-in-tech">Tiffany</a> and is{" "}
+        Coded by Tiffany,{" "}
         <a
-          href="https://github.com/lydi-in-tech/react-week4-homework"
+          href="https://github.com/svttop/weather-app-react"
           target="_blank"
           title="GitHub weather app project"
           rel="noreferrer"
@@ -113,10 +112,10 @@ function App() {
         </a>{" "}
         and{" "}
         <a
-          href="https://shecodes-weather.netlify.app/"
+          href="https://ubiquitous-kitsune-e44a9c.netlify.app/?#"
           target="_blank"
           rel="noreferrer"
-          title="weather app project on netlify website"
+          title="netlify url"
         >
           hosted on Netlify
         </a>
