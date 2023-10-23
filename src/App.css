@@ -19,6 +19,7 @@ h2 {
 }
 
 .icon {
+  text-align: center;
   margin-top: 20px;
   left: 150px;
 }
@@ -28,7 +29,10 @@ h2 {
   left: 270px;
   top: 35px;
 }
-
+.temp {
+  font-size: 30px;
+  text-align: center;
+}
 .weather-info {
   font-size: 18px;
   text-align: center;
@@ -86,7 +90,6 @@ li {
 }
 
 .btn-primary {
-  position: absolute;
   left: 180px;
   top: 38px;
   padding: 20px;
