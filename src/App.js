@@ -3,6 +3,11 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
+      <h1>
+        😀👋🏻
+        <br />
+      </h1>
+      <br />
       <div className="search-bar">
         <form id="search-form">
           <div className="row">
@@ -28,10 +33,6 @@ function App() {
       </div>
       <br />
       <br />
-      <h1>
-        😀👋🏻
-        <br />
-      </h1>
 
       <h2>
         <div id="city" className="city">
