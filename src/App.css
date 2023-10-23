@@ -90,6 +90,7 @@ li {
   position: absolute;
   left: 880px;
   top: 38px;
+  padding: 20%;
 }
 
 .weather-forecast-date {
