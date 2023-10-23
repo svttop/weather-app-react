@@ -51,7 +51,7 @@ li {
 
 .search-bar .search-input {
   height: 30px;
-  width: 500px;
+  width: 200px;
   background: #f9f7fe;
   border: none;
   border-radius: 6px;
@@ -64,8 +64,7 @@ li {
 
 .search-form {
   top: 40px;
-  left: 250px;
-
+  left: 550px;
   font-size: 16px;
 }
 
