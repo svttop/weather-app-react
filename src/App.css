@@ -15,7 +15,7 @@ h1 {
 
 .celsius {
   font-size: 20px;
-  position: absolute;
+
   left: 270px;
   top: 35px;
 }
@@ -45,7 +45,6 @@ h1 {
 }
 
 .search-form {
-  position: absolute;
   top: 40px;
   left: 250px;
 
@@ -53,7 +52,6 @@ h1 {
 }
 
 .weather-forecast {
-  position: absolute;
   top: 390px;
   margin-top: 20px;
   text-align: center;
