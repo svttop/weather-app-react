@@ -33,6 +33,16 @@ function App() {
         😀👋🏻
         <br />
       </h1>
+
+      <h2>
+        <div id="city" className="city">
+          New Zealand
+        </div>
+      </h2>
+      <div className="time" id="time">
+        Monday, 1:45pm
+      </div>
+
       <div className="icon">
         <img
           src="http://openweathermap.org/img/wn/50d@2x.png"
@@ -44,7 +54,7 @@ function App() {
         <div className="temp" id="temp">
           21
         </div>
-        <span id="celcius" className="celcius">
+        <span id="celsius" className="celsius">
           <strong id="temperature"></strong>
           <a href="/#" id="celsius-link">
             °C
@@ -54,14 +64,6 @@ function App() {
             °F
           </a>
         </span>
-      </div>
-      <h1>
-        <div id="city" className="city">
-          New Zealand
-        </div>
-      </h1>
-      <div className="time" id="time">
-        Monday, 1:45pm
       </div>
 
       <div className="weather-info">

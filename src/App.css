@@ -10,7 +10,7 @@
 
 h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
 }
 .icon {
   position: absolute;
@@ -30,7 +30,7 @@ h1 {
   top: 22px;
 }
 
-.celcius {
+.celsius {
   font-size: 20px;
   position: absolute;
   left: 270px;
