@@ -92,8 +92,11 @@ li {
 }
 
 .btn-primary {
-  left: 880px;
-  top: 38px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   padding: 10px;
 }
 
