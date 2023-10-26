@@ -9,8 +9,8 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New Zealand" />
         <footer>
-          This project was coded by Tiffany {""}
-          {""} and is {""}
+          Coded by Tiffany {""}
+          {""} , {""}
           <a
             rel="noreferrer"
             href="https://github.com/svttop/weather-app-react"
