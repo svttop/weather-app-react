@@ -1,10 +1,8 @@
 .Weather {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: 1px solid black;
+
   padding: 16px;
-  border-radius: 8px;
-  color: black;
 }
 
 .Weather h1 {
