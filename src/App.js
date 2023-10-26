@@ -7,6 +7,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
+        <h1>😀👋🏻</h1>
+        <br />
         <Weather defaultCity="New Zealand" />
         <footer>
           Coded by Tiffany {""}
