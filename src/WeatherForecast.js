@@ -35,9 +35,9 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "ff34823356eb24de65ff432da1bc6a20";
+    let apiKey = "84f87822fe4a210ebb350o27ff8t8e36";
     let city = props.data.city;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
 
     axios.get(apiUrl).then(handleResponse);
     return null;
