@@ -60,8 +60,8 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo info={weatherData} unit={unit} setUnit={setUnit} />
-        <WeatherForecast city={weatherData.city} unit={unit} />
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast data={weatherData.city} />
       </div>
     );
   } else {
