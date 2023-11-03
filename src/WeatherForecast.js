@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "./WeatherForecast.css";
-import WeatherForecastDay from "./WeatherForecastDay";
+import axios from "axios";
+import ForecastDay from "./ForecastDay";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -9,31 +9,22 @@ export default function WeatherForecast(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props.coordinates]);
+  }, [props.data.city]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
 
-  function load() {
-    let apiKey = "bc5ca568ee2d7c71357ca430a3ff8705";
-    let longitude = props.coordinates.longitude;
-    let latitude = props.coordinates.latitude;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
-  }
-
   if (loaded) {
     return (
       <div className="WeatherForecast">
-        <div className="row">
+        <div className="row mt-5 mb-4">
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={dailyForecast} />
+                  <ForecastDay data={dailyForecast} />
                 </div>
               );
             } else {
@@ -44,8 +35,11 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    load();
+    let apiKey = "bc5ca568ee2d7c71357ca430a3ff8705";
+    let city = props.data.city;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
 
+    axios.get(apiUrl).then(handleResponse);
     return null;
   }
 }
