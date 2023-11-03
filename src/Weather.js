@@ -5,25 +5,26 @@ import "./Weather.css";
 import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
-  const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [unit, setUnit] = useState("celsius");
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
-      date: new Date(response.data.dt * 1000),
-      description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
-      wind: response.data.wind.speed,
-      city: response.data.name,
+      city: response.data.city,
+      temperature: response.data.temperature.current,
+      humidity: Math.round(response.data.temperature.humidity),
+      pressure: response.data.temperature.pressure,
+      wind: Math.round(response.data.wind.speed),
+      icon: response.data.condition.icon,
+      description: response.data.condition.description,
+      date: new Date(response.data.time * 1000),
     });
   }
 
   function search() {
-    const apiKey = "ff34823356eb24de65ff432da1bc6a20";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-
+    let apiKey = "10469a8133000fdbto80b02142f32bfd";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -31,35 +32,36 @@ export default function Weather(props) {
     event.preventDefault();
     search();
   }
+
   function handleCityChange(event) {
     setCity(event.target.value);
   }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-9">
+          <div className="row mt-2">
+            <div className="col-9 mt-1">
               <input
                 type="search"
-                placeholder="Enter City name here"
-                className="form-control"
+                placeholder="Enter a city..."
+                className="from-control w-100"
+                autoFocus="on"
                 onChange={handleCityChange}
-              />
+              ></input>
             </div>
             <div className="col-3">
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-info w-100"
-              />
+                className="btn btn-secondary w-100"
+              ></input>
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData} />
-        <br />
-        <br />
-        <WeatherForecast data={weatherData} />
+        <WeatherInfo info={weatherData} unit={unit} setUnit={setUnit} />
+        <WeatherForecast city={weatherData.city} unit={unit} />
       </div>
     );
   } else {
